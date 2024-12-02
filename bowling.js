@@ -4,11 +4,12 @@
 //
 
 export class Game {
-  roll() {
-    throw new Error('Remove this statement and implement this function');
-  }
 
-  get score() {
-    throw new Error('Remove this statement and implement this getter');
-  }
+    lancerDeBoule(nbQuilles) {
+        throw new Error('Remove this statement and implement this function');
+    }
+
+    get score() {
+        throw new Error('Remove this statement and implement this function');
+    }
 }
