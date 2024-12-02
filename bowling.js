@@ -17,7 +17,8 @@ export class Game {
     lancerDeBoule(nbQuilles) {
         this.currentScore += nbQuilles;
         if (this.premierLance !== 0 && this.secondLance !== 0) {
-            this.currentScore += nbQuilles;
+            const total = this.premierLance + this.secondLance;
+            if (total === 10) this.currentScore += nbQuilles;
         }
         if (this.premierLance !== 0 && this.secondLance === 0) this.secondLance = nbQuilles
         if (this.premierLance === 0) this.premierLance = nbQuilles;
