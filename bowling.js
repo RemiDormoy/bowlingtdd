@@ -11,7 +11,7 @@ export class Game {
     }
 
     lancerDeBoule(nbQuilles) {
-        this.currentScore = 3;
+        this.currentScore += nbQuilles;
     }
 
     get score() {
