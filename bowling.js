@@ -16,6 +16,5 @@ export class Game {
 
     get score() {
         return this.currentScore;
-        throw new Error('Remove this statement and implement this function');
     }
 }
