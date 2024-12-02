@@ -30,5 +30,15 @@ describe('Game', () => {
       expect(game.score).toEqual(7);
     })
   })
+
+  describe('le jeu est à 18 après un spare et un lancé à 4', () => {
+    let game = new Game;
+    game.lancerDeBoule(9);
+    game.lancerDeBoule(1);
+    game.lancerDeBoule(4);
+    it('scores 18 points', () => {
+      expect(game.score).toEqual(18);
+    })
+  })
 })
 
