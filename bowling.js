@@ -5,6 +5,8 @@
 
 export class Game {
     currentScore;
+    currentHand = 0;
+
     premierLance = 0;
     secondLance = 0;
 
@@ -13,12 +15,21 @@ export class Game {
     }
 
     lancerDeBoule(nbQuilles) {
+        currentHand++;
+        if (currentHand % 2 == 0) {
+            this.premierLance = 0;
+            this.secondLance = 0;
+        }
+
+
         this.currentScore += nbQuilles;
         if (this.premierLance !== 0 && this.secondLance !== 0) {
             this.currentScore += nbQuilles;
         }
         if (this.premierLance !== 0 && this.secondLance === 0) this.secondLance = nbQuilles
         if (this.premierLance === 0) this.premierLance = nbQuilles;
+
+
     }
 
     get score() {
