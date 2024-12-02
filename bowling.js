@@ -4,19 +4,18 @@
 //
 
 export class Game {
-
+    currentScore;
 
     constructor() {
-        this.score = 0;
+        this.currentScore = 0;
     }
 
     lancerDeBoule(nbQuilles) {
-
         throw new Error('Remove this statement and implement this function');
     }
 
     get score() {
-        return this.score;
+        return this.currentScore;
         throw new Error('Remove this statement and implement this function');
     }
 }
