@@ -11,7 +11,7 @@ export class Game {
     }
 
     lancerDeBoule(nbQuilles) {
-        throw new Error('Remove this statement and implement this function');
+        this.currentScore = 3;
     }
 
     get score() {

@@ -21,5 +21,14 @@ describe('Game', () => {
       expect(game.score).toEqual(3);
     })
   })
+
+  describe('le jeu est a 7 apres un lancer à 3 et un autre à 4', () => {
+    let game = new Game;
+    game.lancerDeBoule(3);
+    game.lancerDeBoule(4);
+    it('scores 7 points', () => {
+      expect(game.score).toEqual(7);
+    })
+  })
 })
 
