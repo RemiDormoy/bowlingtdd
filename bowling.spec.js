@@ -40,5 +40,17 @@ describe('Game', () => {
       expect(game.score).toEqual(18);
     })
   })
+
+  describe('le jeu est à 21 après un premier jeu à 3, puis un spare et un lancé à 4', () => {
+    let game = new Game;
+    game.lancerDeBoule(2);
+    game.lancerDeBoule(1);
+    game.lancerDeBoule(9);
+    game.lancerDeBoule(1);
+    game.lancerDeBoule(4);
+    it('scores 21 points', () => {
+      expect(game.score).toEqual(21);
+    })
+  })
 })
 
