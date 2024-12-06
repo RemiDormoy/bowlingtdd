@@ -10,6 +10,6 @@ export class Game {
     }
 
     get score() {
-        throw Error("Yolo");
+        return 0
     }
 }
